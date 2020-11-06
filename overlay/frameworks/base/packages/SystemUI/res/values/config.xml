@@ -57,4 +57,7 @@
 
     <!-- Preferred max refresh rate at keyguard, if supported by the display. -->
     <integer name="config_keyguardMaxRefreshRate">60</integer>
+
+    <!-- The number of columns in the QuickSettings -->
+    <integer name="quick_settings_num_columns">3</integer>
 </resources>
