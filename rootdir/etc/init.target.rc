@@ -134,6 +134,7 @@ on boot
     # init the  cpuset value for the camera background,don't change the oder
     write /dev/cpuset/camera-background/background/cpus 0-2
     write /dev/cpuset/camera-background/cpus 0-3
+    write /dev/cpuset/restricted/cpus 0-3
 
     chown system /sys/devices/system/cpu/hyp_core_ctl/enable
     chown system /sys/devices/system/cpu/hyp_core_ctl/hcc_min_freq
