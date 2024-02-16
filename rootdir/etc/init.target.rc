@@ -218,3 +218,8 @@ service vendor.nv_mac /vendor/bin/nv_mac
     user system
     group system inet net_admin wifi net_raw
     oneshot
+
+on property:vendor.post_boot.parsed=1
+    # Setup dex2oat thread count and cpuset
+    setprop dalvik.vm.dex2oat-cpu-set 0,1,2,3,4,5,6
+    setprop dalvik.vm.dex2oat-threads 6
