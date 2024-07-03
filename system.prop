@@ -13,6 +13,16 @@ persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 
+# LMK properties
+ro.lmk.debug=false
+ro.lmk.critical_upgrade=true
+ro.lmk.upgrade_pressure=80
+ro.lmk.downgrade_pressure=60
+
+# Set the minimum and maximum LMK kill thresholds (values in MB)
+ro.lmk.kill_threshold_min=1536
+ro.lmk.kill_threshold_max=4096
+
 # Media
 media.aac_51_output_enabled=true
 media.stagefright.enable-aac=true
